@@ -1,0 +1,36 @@
+address_id,country,city,street,house
+1,Finland,Etelä-Peetu,Lottatöyry,6
+2,Finland,Saulikylä,Isoluomatöyry,136
+3,Finland,Reinikkalahti,Kerttulakaari,3
+4,Finland,Etelä-Oskarikoski,Jadessatie,126
+5,Finland,Uus-Iljamäki,Loviisakuja,0542
+6,Finland,Etelä-Celina,Nokkonenkatu,638
+7,Finland,Etelä-Samuel,Jaakkotie,0
+8,France,Davidnec,boulevard de Guichard,44
+9,France,Gaillard-la-Forêt,avenue Dos Santos,3
+10,France,Lecomte-sur-Rolland,impasse Stéphane Lombard,48
+11,France,Roussel-la-Forêt,impasse Hernandez,8
+12,France,Laine,avenue Édouard Mace,9
+13,France,Bouvier-sur-Bouvet,rue de Lenoir,
+14,France,Meunier,impasse Noel,
+15,Germany,Stade,Conny-Münch-Ring,63
+16,Germany,Baunatal,Fiedlerweg,25
+17,Germany,Cuxhaven,Steffenring,2
+18,Germany,Arnstadt,Andre-Fuhrmann-Weg,9
+19,Germany,Stralsund,Niels-Riedl-Platz,30
+20,Germany,Schweinfurt,Reuterallee,986
+21,Germany,Schönebeck,Schüttestraße,77
+22,Lithuania,Utena,Doe prospektas,63
+23,Lithuania,Tauragė,Doe alėja,08
+24,Lithuania,Klaipėda,Doe prospektas,65
+25,Lithuania,Marijampolė,Doe prospektas,79
+26,Lithuania,Utena,Doe g,47
+27,Lithuania,Mažeikiai,Doe alėja,63
+28,Lithuania,Panevėžys,Doe g,14
+29,USA,New Moshe,Lee Parkway Apt,864
+30,USA,Kuhlmanborough,Gutmann Spring,149
+31,USA,East Rigobertomouth,Funk Square,47221
+32,USA,East Shaneland,Erich Mission,3573
+33,USA,Turcotteshire,Marvin Gardens Apt,8911
+34,USA,Leximouth,Aileen Mission,674
+35,USA,South Rudolph,Brown Rest Suite,70428

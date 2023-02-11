@@ -1,0 +1,147 @@
+/*Содержание таблиц adress, persons, contacts импортированы из cvs*/
+
+/*Заполнение таблицы lessons*/
+insert into lessons (lesson_id, lesson_name, time)
+VALUES (1, 'Introduction', abs(random()%3600) + 3600),
+       (2, 'Introduction', abs(random()%3600) + 3600),
+       (3,'SQL pt.1', abs(random()%3600) + 3600),
+       (4,'SQL pt.1', abs(random()%3600) + 3600),
+       (5, 'SQL pt.2', abs(random()%3600) + 3600),
+       (6, 'SQL pt.3', abs(random()%3600) + 3600),
+       (7,'Github',abs(random()%3600) + 3600),
+       (8,'Linux',abs(random()%3600) + 3600),
+       (9,'Linux',abs(random()%3600) + 3600),
+       (10,'Sed,Grep,Awk',abs(random()%3600) + 3600),
+       (11,'Http',abs(random()%3600) + 3600),
+       (12, 'Software testing theory', abs(random()%3600) + 3600),
+       (13, 'Software testing theory', abs(random()%3600) + 3600);
+
+
+/*Заполнение таблицы material */
+
+insert into material(material_id, material_name, author, material_type, material_source)
+values (1, 'Тестирование Дот Ком', 'Савин', 'book',null),
+       (2,'Learning SQL','Beaulieu','book', null),
+       (3,'Bash-скрипты, руководство в 11 частях', null,'book', null),
+       (4, 'Bash, карманный справочник для системного администратора', 'Роббинс', 'book', null),
+       (5,'Тестирование черного ящика', 'Бейзер', 'book',null),
+       (6, 'Введение в системы баз данных', 'Дейт', 'book',null),
+       (7, 'Postman для тестировщика', null, 'video', 'https://www.youtube.com/watch?v=zfrQtU8eCEo'),
+       (8,'Что такое API',null, 'video','https://www.youtube.com/watch?v=vPVAYsc-U60'),
+       (9,'Базы данных SQL, уроки для начинающих', null,'video', 'https://www.youtube.com/watch?v=IK6e1SFCdow'),
+       (10,'Тестировщик с нуля за 6 часов',null, 'video','https://www.youtube.com/watch?v=3kgdKE7ndvI&t=34s'),
+       (11,'Упражнения по SQL',null, 'course','https://www.sql-ex.ru/'),
+       (12,'Git and GitHub for Beginners',null, 'video','https://www.youtube.com/watch?v=RGOj5yH7evk'),
+       (13,'10 замечательных примеров команд Awk', null, 'article', '10 замечательных примеров команд Awk'),
+       (14,'Как тестируют в Google', 'Каролло, Уиттакер, Арбон', 'book', null);
+
+
+/*Заполнение таблицы material_lesson*/
+
+insert into material_lesson (material_id, lesson_id)
+values (1,1),
+       (1,2),
+       (1,12),
+       (1,13),
+       (2,3),
+       (2,4),
+       (2,5),
+       (2,6),
+       (3,8),
+       (3,9),
+       (3,10),
+       (4,8),
+       (4,9),
+       (5,1),
+       (5,2),
+       (5,12),
+       (5,13),
+       (6,3),
+       (6,4),
+       (6,5),
+       (6,6),
+       (7,11),
+       (8,11),
+       (9,3),
+       (9,4),
+       (9,5),
+       (9,6),
+       (10,1),
+       (10,2),
+       (10,12),
+       (10,13),
+       (11,3),
+       (11,4),
+       (11,5),
+       (11,6),
+       (12,7),
+       (13,10),
+       (14,1),
+       (14,2),
+       (14,12),
+       (14,13);
+
+
+/*Заполнение таблицы person_lesson*/
+
+insert into person_lesson (person_id, lesson_id )
+values (1,1),
+       (1,2),
+       (1,3),
+       (1,4),
+       (1,5),
+       (2,6),
+       (2,7),
+       (2,8),
+       (2,9),
+       (3,10),
+       (3,11),
+       (3,12),
+       (3,13),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1),
+       (abs(random()%((select count(*) from persons) -3))+4, abs(random()%(select count(*) from lessons))+1);
+
+/*Заполнение таблицы schedule*/
+
+insert into schedule(schedule_id, date_time, lesson_id)
+values (1, '2021-02-01 11:00',1),
+       (2, '2021-02-08 11:00',2),
+       (3,'2021-02-15 11:00',3),
+       (4,'2021-02-18 11:00',4),
+       (5, '2021-02-22 11:00',5),
+       (6, '2021-02-25 11:00',6),
+       (7, '2021-03-04 11:00',7),
+       (8,'2021-03-08 11:00',8),
+       (9,'2021-03-11 11:00',9);
